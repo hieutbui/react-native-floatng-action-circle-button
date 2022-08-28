@@ -24,7 +24,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import FloatingActionButton from './FloatingActionButton';
+import FloatingActionButton from './src/FloatingActionButton';
 import Assets from './assets/Assets';
 
 const Section = ({children, title}) => {

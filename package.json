@@ -33,5 +33,12 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hieutbui/react-native-floatng-action-circle-button"
+  },
+  "bugs": {
+    "url": "https://github.com/hieutbui/react-native-floatng-action-circle-button/issues"
   }
 }
