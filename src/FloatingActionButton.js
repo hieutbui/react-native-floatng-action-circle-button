@@ -20,7 +20,7 @@ import Assets from '../assets/Assets';
  * @property {Boolean} actions[].disable: actions status (active/disable - default: true)
  * @property {()=>void=} actions[].onPress: event when actions is pressed
  * @property {String} actions[].label: label for action
- * @property {source} actions[].icon: custom Icon for CircleButton
+ * @property {ImageSourcePropType} actions[].icon: custom Icon for CircleButton
  * @property {StyleProp<ViewStyle>} actions[].iconStyle: custom style for button's icon
  * @property {StyleProp<ViewStyle>} actions[].buttonStyle: custom style for button
  * @property {StyleProp<ViewStyle>} containerStyle: custom style for <View/> that wrap floating button
