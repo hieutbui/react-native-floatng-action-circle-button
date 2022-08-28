@@ -7,6 +7,7 @@ import {
     ViewStyle,
     ImageSourcePropType
 } from 'react-native';
+import Assets from '../assets/Assets';
 
 /**
  * @author hieu
@@ -36,10 +37,10 @@ const styles = StyleSheet.create({
         height: 56,
         width: 56,
         borderRadius: 28,
-        backgroundColor: '#ffffff',
+        backgroundColor: Assets.Colors.pureWhite,
         justifyContent: 'center',
         alignItems: 'center',
-        shadowColor: '#000000',
+        shadowColor: Assets.Colors.black,
         shadowOffset: {
             width: 0,
             height: 3,

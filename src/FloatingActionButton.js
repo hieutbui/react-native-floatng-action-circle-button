@@ -157,8 +157,8 @@ const FloatingActionButton = ({
                   {
                     ...styles.label,
                     color: item.disable
-                      ? '#989898'
-                      : '#ffffff',
+                      ? Assets.Colors.gray
+                      : Assets.Colors.pureWhite,
                   },
                   labelStyle,
                 ]}
@@ -182,7 +182,7 @@ const FloatingActionButton = ({
       <ActionButton
         icon={floatingCheck ? activeAnchor : inactiveAnchor}
         onPress={toggleMenu}
-        buttonStyle={[{ backgroundColor: '#007aff' }, anchorButtonStyle]}
+        buttonStyle={[{ backgroundColor: Assets.Colors.azure }, anchorButtonStyle]}
       />
     </View>
   );
@@ -210,7 +210,7 @@ const styles = StyleSheet.create({
     right: 60,
   },
   background: {
-    backgroundColor: '#000000',
+    backgroundColor: Assets.Colors.black,
     opacity: 0.5,
     position: 'absolute',
     width: 56,
