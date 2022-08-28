@@ -5,12 +5,13 @@ import {
     StyleSheet,
     StyleProp,
     ViewStyle,
+    ImageSourcePropType
 } from 'react-native';
 
 /**
  * @author hieu
  * @typedef Props
- * @property {path} icon: icon path
+ * @property {ImageSourcePropType} icon: icon path
  * @property {StyleProp<ViewStyle>=} iconStyle: custom style for icon
  * @property {StyleProp<ViewStyle>=} buttonStyle: custom style for button
  * @property {()=>void=} onPress: handle press button

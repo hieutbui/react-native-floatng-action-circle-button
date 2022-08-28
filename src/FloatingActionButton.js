@@ -6,7 +6,8 @@ import {
   StyleProp,
   ViewStyle,
   Pressable,
-  Dimensions
+  Dimensions,
+  ImageSourcePropType,
 } from 'react-native';
 import ActionButton from './ActionButton';
 import Assets from '../assets/Assets';
@@ -25,7 +26,9 @@ import Assets from '../assets/Assets';
  * @property {StyleProp<ViewStyle>} containerStyle: custom style for <View/> that wrap floating button
  * @property {StyleProp<ViewStyle>} actionButtonStyle: custom style for action button
  * @property {StyleProp<ViewStyle>} backgroundStyle: custom style for background
- * @property {StyleProp<ViewStyle>} floatingButtonStyle: custom style for floating button
+ * @property {StyleProp<ViewStyle>} anchorButtonStyle: custom style for anchor button
+ * @property {ImageSourcePropType} anchorInactiveIcon: custom icon for anchor button
+ * @property {ImageSourcePropType} anchorActiveIcon: custom icon for anchor button
  * @param {Props} props
  * @returns {JSX.Element}
  */
@@ -38,8 +41,15 @@ const FloatingActionButton = ({
   containerStyle,
   actionButtonStyle,
   backgroundStyle,
-  floatingButtonStyle
+  anchorButtonStyle,
+  anchorActiveIcon,
+  anchorInactiveIcon,
 }) => {
+
+  const activeAnchor = anchorActiveIcon ?? Assets.Icons.cancelFloating;
+
+  const inactiveAnchor = anchorInactiveIcon ?? Assets.Icons.threeDots;
+
   const animation = useRef(new Animated.Value(0)).current;
 
   const [floatingCheck, setFloatingCheck] = useState(false);
@@ -170,9 +180,9 @@ const FloatingActionButton = ({
       })}
 
       <ActionButton
-        icon={floatingCheck ? Assets.Icons.cancelFloating : Assets.Icons.threeDots}
+        icon={floatingCheck ? activeAnchor : inactiveAnchor}
         onPress={toggleMenu}
-        buttonStyle={[{ backgroundColor: '#007aff' }, floatingButtonStyle]}
+        buttonStyle={[{ backgroundColor: '#007aff' }, anchorButtonStyle]}
       />
     </View>
   );
@@ -193,7 +203,6 @@ const styles = StyleSheet.create({
     right: -1,
     flexDirection: 'row',
     alignItems: 'center',
-    // marginRight: 17,
   },
   label: {
     fontSize: 16,
@@ -209,7 +218,6 @@ const styles = StyleSheet.create({
     right: -1,
     borderRadius: 28,
     flex: 1,
-    // marginRight: 17,
   },
 });
 

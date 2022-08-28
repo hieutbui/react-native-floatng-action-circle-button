@@ -114,7 +114,7 @@ const App = () => {
         actionButtonStyle={{
           marginRight: 17,
         }}
-        floatingButtonStyle={{
+        anchorButtonStyle={{
           marginRight: 17,
         }}
       />
