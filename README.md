@@ -20,12 +20,12 @@ Simple floating action button component with circle button for react native.
 
 ## Usage/Examples
 
-First step: import Component
+**First step:** import Component
 ```javascript
 import FloatingActionButton from 'react-native-floating-action-circle-button'
 ```
 
-Second step: add actions list
+**Second step:** add actions list
 ```javascript
 const actions = [
   {
@@ -49,7 +49,7 @@ const actions = [
 ];
 ```
 
-Third step: place it in the screen
+**Third step:** place it in the screen
 ```javascript
 <FloatingActionButton 
   actions={actions}
