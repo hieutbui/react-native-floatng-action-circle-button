@@ -22,7 +22,7 @@ Simple floating action button component with circle button for react native.
 
 **First step:** import Component
 ```javascript
-import FloatingActionButton from 'react-native-floating-action-circle-button'
+import FloatingActionButton from 'react-native-floating-action-circle-button';
 ```
 
 **Second step:** add actions list
@@ -32,7 +32,7 @@ const actions = [
     icon: Assets.Icons.activeBin,
     label: 'Delete',
     disable: false,
-    onPress: null
+    onPress: null,
   },
   {
     icon: Assets.Icons.inactiveCancelInvoice,
@@ -44,7 +44,7 @@ const actions = [
     icon: Assets.Icons.activeReport,
     label: 'Report',
     disable: false,
-    onPress: null
+    onPress: null,
   },
 ];
 ```
@@ -83,7 +83,7 @@ const actions = [
 | :-------- | :-------        |:---  | :------------------------- |
 | `disable` | `Boolean` |`false`| Actions status |
 | `label` | `string`  |``| Label for action |
-| `onPress` | `Function` | `null` | Function to be called when action button is pressed |
+| `onPress` | `Function` | `null` | Function to be called when action button is pressed. **Can't press when disable is true** |
 | `icon` | `ImageSourcePropType` | `null` | Icon to be rendered inside action button |
 | `iconStyle` | `style` | `null` | The custom style for icon inside action button |
 | `buttonStyle` | `style` | `null` | The custom style for action button |
