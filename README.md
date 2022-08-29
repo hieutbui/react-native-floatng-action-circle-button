@@ -69,7 +69,7 @@ const actions = [
 
 | Property  | Type            | Default | Description                |
 | :-------- | :-------        |:---  | :------------------------- |
-| `actions` | `Array<Object>` |`[]`  | Actions to be shown when user press the anchor Floating Button |
+| `actions` | `Array<Object>` |`[]`  | Actions to be shown when user press the anchor Floating Button. **Must pass at less one action** |
 | `containerStyle` | `style`  |`null`| The custom style for wrapper container |
 | `actionButtonStyle` | `style` | `null` | The custom style for actions button |
 | `backgroundStyle` | `style` | `null` | The custom style for background and disable |
