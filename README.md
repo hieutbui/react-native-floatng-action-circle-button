@@ -76,6 +76,7 @@ const actions = [
 | `anchorInactiveIcon` | `ImageSourcePropType` | `...` | Icon to be rendered for anchor button when it's not pressed |
 | `anchorActiveIcon` | `ImageSourcePropType` | `X` | Icon to be rendered for anchor button when it is pressed |
 | `anchorButtonStyle` | `style` | `null` | The custom style for anchor button |
+| `anchorIconStyle` | `style` | `null` | The custom style for icon inside anchor button |
 
 #### `actions` props
 
