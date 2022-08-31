@@ -61,7 +61,7 @@ const FloatingActionButton = ({
 
     Animated.timing(animation, {
       toValue,
-      duration: 400,
+      duration: 500,
       // friction: 5,
       useNativeDriver: true,
     }).start();
@@ -91,7 +91,7 @@ const FloatingActionButton = ({
 
   const scaleInterPolate = animation.interpolate({
     inputRange: [0, 1],
-    outputRange: [0, 1000],
+    outputRange: [0, 100],
   });
 
   const bgStyle = {
