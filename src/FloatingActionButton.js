@@ -13,7 +13,7 @@ import ActionButton from './ActionButton';
 import Assets from '../assets/Assets';
 
 /**
- * Place it inside the biggest component of screens for floating. You must pass at less 1 action to actions property
+ * Place it inside the biggest component of screens for floating. You must pass at least 1 action to actions property
  * @author hieu
  * @typedef Props
  * @property {Object[]} actions: a list of actions for floating action button
